@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catequesis 3° B · Lecturas · Dashboard</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: #6f6f6f;
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    color: #000;
+    min-height: 100%;
+  }
+  .wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 28px 18px 48px;
+  }
+  .panel {
+    background: #fff;
+    padding: 28px 32px 34px;
+    box-shadow: 0 2px 14px rgba(0,0,0,.18);
+  }
+  .cabezal {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 2.5px solid #000;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  .sigla {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1;
+  }
+  .ubic {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.45;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 1.08;
+    margin: 18px 0 8px;
+    letter-spacing: -0.015em;
+  }
+  .bajada {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0 0 22px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #000;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr; }
+    .panel { padding: 22px 18px 28px; }
+    h1 { font-size: 28px; }
+  }
+  a.card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1.5px solid #000;
+    padding: 18px 18px 16px;
+    transition: background .12s ease, color .12s ease;
+  }
+  a.card:hover,
+  a.card:focus-visible {
+    background: #000;
+    color: #fff;
+    outline: none;
+  }
+  a.card .code {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  a.card .name {
+    font-size: 22px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+  }
+  a.card .meta {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.45;
+    opacity: 0.75;
+  }
+  a.card:hover .meta,
+  a.card:focus-visible .meta { opacity: 0.9; }
+  .pie {
+    margin-top: 22px;
+    padding-top: 12px;
+    border-top: 1px solid #000;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel">
+      <div class="cabezal">
+        <div class="sigla">3° B</div>
+        <div class="ubic">Catequesis · Formación Religiosa<br>Rito y tiempo</div>
+      </div>
+      <h1>Dashboard de lecturas</h1>
+      <p class="bajada">Fichas de lectura para la clase. Abrí la que toque para imprimir o leer en pantalla.</p>
+
+      <div class="grid">
+        <a class="card" href="sesenta-kilometros.html">
+          <div class="code">Rito y tiempo</div>
+          <p class="name">Sesenta kilómetros</p>
+          <div class="meta">4 mitades · solo lectura · Clase 2-oct<br>Abrir ficha →</div>
+        </a>
+      </div>
+
+      <div class="pie">
+        <span>Formación Religiosa · 3° B</span>
+        <span><a href="sesenta-kilometros.pdf" style="color:inherit;text-decoration:underline;">PDF · Sesenta kilómetros</a></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
